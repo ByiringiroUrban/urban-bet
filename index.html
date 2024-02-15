@@ -5,33 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
-    <title>DEPOSITE</title>
+    <title>SignUp</title>
   </head>
 <body>
    <div class="container">
-    <h2 class="join">DEPOSIT</h2>
+    <h2 class="join">Join Now</h2>
     <div class="mobile">
       <foam section="index.php" method="POST">
         <!-- <label for="telefone"> Your Mobile Number:</label> -->
-        <h3 class="header">choose payment</h3>
-      <select id="payment" class="payment">
-        <option value="mtn">MTN</option>
-        <option value="airtel">AIRTEL</option>
-        <option value="tigo">TIGO</option>
-      </select>
+        <h3 class="header">Your Mobile Number</h3>
+        <input type="tel" id="phone" placeholder="(+250) 788-668-243" pattern="[0-9]" maxlength="17" required class="mobile-phone">
       </foam>
     </div>
     <div class="pac">
       <foam section="index.php" method="POST">
         <!-- <label for="password"> Password:</label> -->
-        <h3 class="header1">Amount</h3>
-        <input type="amount" id="" minlength="4" required placeholder="12" class="password">
+        <h3 class="header1">Password</h3>
+        <input type="password" id="password" minlength="4" maxlength="8" required placeholder="XXXX" class="password">
       </foam>
-      <p style="font-size: 18px; font-weight: bold; color: rgb(122, 121, 121);" >Min: 10, max: 5,000</p>
     </div>
-    <h3 class="join2">DEPOSIT</h3>
-   <P class="paragraph"><span class="style">What happen next?</span> confirm the deposit on your phone to complete deposit process.</P>
-   <p class="Already"><span class="style2">Note:</span> Make sure any pop-up blocker is disabled</p>
+    <button class="join2">JOIN NOW</button>
+    <p class="paragraph">By Creating an account you accept the <u class="style">Teams and conditions</u></p>
+    <p class="Already">Already have an account? <u class="style2">Log In</u> </p>
    </div>
 </body>
 </html>
